@@ -3,7 +3,10 @@
 use App\Http\Controllers\ExercicioCinco;
 use App\Http\Controllers\ExercicioDez;
 use App\Http\Controllers\ExercicioDois;
+use App\Http\Controllers\ExercicioDoze;
+use App\Http\Controllers\ExercicioOito;
 use App\Http\Controllers\ExercicioQuatro;
+use App\Http\Controllers\ExercicioSeis;
 use App\Http\Controllers\ExercicioTres;
 use App\Http\Controllers\ExercicioTreze;
 use App\Http\Controllers\ExercicioUm;
@@ -33,14 +36,16 @@ Route::post('exercicio/quatro', [ExercicioQuatro::class, 'verficar']);
 
 Route::post('exercicio/cinco',[ExercicioCinco::class, 'verificacao']);
 
-Route::post('exercicio/seis',[ExercicioSeisController::class, 'idade']);
+Route::post('exercicio/seis',[ExercicioSeis::class, 'idade']);
 
 Route::get('exercicio/sete', 
 [ExercicioSeteController::class, 'exibirNumeros']);
 
-Route::post('exercicio/oito',[ExercicioOitoController::class, 'tabuada']);
+Route::post('exercicio/oito',[ExercicioOito::class, 'tabuada']);
 
-Route::get('dez',
+Route::get('exercicio/dez',
 [ExercicioDez::class, 'impar']);
 
-Route::get('treze', [ExercicioTreze::class, 'divisiveis']);
+Route::get('exercicio/doze', [ExercicioDoze::class, 'decrescente']);
+
+Route::get('exercicio/treze', [ExercicioTreze::class, 'divisiveis']);
