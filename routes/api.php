@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ExercicioCinco;
+use App\Http\Controllers\ExercicioDez;
 use App\Http\Controllers\ExercicioDois;
 use App\Http\Controllers\ExercicioQuatro;
 use App\Http\Controllers\ExercicioTres;
@@ -37,3 +38,6 @@ Route::get('exercicio/sete',
 [ExercicioSeteController::class, 'exibirNumeros']);
 
 Route::post('exercicio/oito',[ExercicioOitoController::class, 'tabuada']);
+
+Route::get('dez',
+[ExercicioDez::class, 'impar']);
