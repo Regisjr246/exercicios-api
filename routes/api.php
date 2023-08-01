@@ -5,6 +5,7 @@ use App\Http\Controllers\ExercicioDez;
 use App\Http\Controllers\ExercicioDois;
 use App\Http\Controllers\ExercicioQuatro;
 use App\Http\Controllers\ExercicioTres;
+use App\Http\Controllers\ExercicioTreze;
 use App\Http\Controllers\ExercicioUm;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -41,3 +42,5 @@ Route::post('exercicio/oito',[ExercicioOitoController::class, 'tabuada']);
 
 Route::get('dez',
 [ExercicioDez::class, 'impar']);
+
+Route::get('treze', [ExercicioTreze::class, 'divisiveis']);
