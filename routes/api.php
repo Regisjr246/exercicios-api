@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\ExercicioCinco;
 use App\Http\Controllers\ExercicioDois;
+use App\Http\Controllers\ExercicioQuatro;
 use App\Http\Controllers\ExercicioTres;
 use App\Http\Controllers\ExercicioUm;
 use Illuminate\Http\Request;
@@ -24,3 +26,7 @@ Route::post('exercicio/dois',
 [ExercicioDois::class, 'retornarMaior']);
 
 Route::post('exercicio/3', [ExercicioTres::class, 'media']);
+
+Route::post('exercicio/quatro', [ExercicioQuatro::class, 'verficar']);
+
+Route::post('exercicio/cinco',[ExercicioCinco::class, 'verificacao']);
