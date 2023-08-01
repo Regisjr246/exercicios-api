@@ -32,3 +32,6 @@ Route::post('exercicio/quatro', [ExercicioQuatro::class, 'verficar']);
 Route::post('exercicio/cinco',[ExercicioCinco::class, 'verificacao']);
 
 Route::post('exercicio/seis',[ExercicioSeisController::class, 'idade']);
+
+Route::get('exercicio/sete', 
+[ExercicioSeteController::class, 'exibirNumeros']);
